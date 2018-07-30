@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=chrome">
+    <link rel="stylesheet" href="https://openlayers.org/en/v5.1.3/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+
+    <title>Scorekeeper</title>
+</head>
+
+<body>
+    <!-- Full content div -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Scorekeeper</h1>
+            <p class="lead">This is a project to illustrate the workings of eventhandlers in Javascript.</p>
+            <hr class="my-4">
+            <p>The goal of this project is to have 2 teams, playing a sport of choice with each one having a button to incrementing the score.</p>
+            <p>There should be a textfield which shows the results on the fly when the user presses a button.</p>
+            <hr class="my-4">
+            <p>The first team that scores 5 points is the winner. In that case, the following happens
+                <ul>
+                    <li>The buttons become unresponsive</li>
+                    <li>The winner gets announced by a label below the score</li>
+                </ul>
+            </p>
+        </div>
+
+        <!--- Div for Team 1 -->
+        <div class="divLeft text-center">
+            <h1>Team 1</h1>
+            <button type="button" class="btn btn-primary" id="incrementTeam1">Increment score</button>
+            <h4 id="scoreTextTeam1">0</h4>
+
+        </div>
+
+        <!--- Div for Team 2 -->
+        <div class="divRight text-center">
+            <h1>Team 2</h1>
+            <button type="button" class="btn btn-primary" id="incrementTeam2">Increment score</button>
+            <h4 id="scoreTextTeam2">0</h4>
+        </div>
+
+        <div class="text-center">
+            <h1>The winner is:</h1>
+            <h4 id="winningTeamLabel"></h4>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="score.js"></script>
+</body>
+
+</html>

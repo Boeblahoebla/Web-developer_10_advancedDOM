@@ -1,0 +1,14 @@
+.divLeft {
+    float: left;
+    width: 50%;
+}
+
+.divRight {
+    float: Left;
+    width: 50%;
+}
+
+#incrementTeam1,
+#incrementTeam2 {
+    margin-bottom: 2rem;
+}
